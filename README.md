@@ -1,6 +1,6 @@
 # Ethara Team Task Manager
 
-A full-stack task management app with role-based access control for Admin and Member users.
+A full-stack task management app with role-based access control for Admin, Reviewer and Tasker users.
 
 ## Features
 
