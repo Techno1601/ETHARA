@@ -10,8 +10,9 @@ const userRoutes = require('./routes/users');
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 4000;
+const FRONTEND_URL = process.env.FRONTEND_URL || '*';
 
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({ origin: FRONTEND_URL }));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
